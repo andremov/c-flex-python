@@ -9,7 +9,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85bc3658-418f-43f4-9a6c-62c96ad53126" name="Default Changelist" comment="" />
+    <list default="true" id="85bc3658-418f-43f4-9a6c-62c96ad53126" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +21,20 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flex File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YbShiq3JXjw0sPJBZkKIneFQ5i" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,8 +42,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/run.bat" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="FLEX" type="ShConfigurationType">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/run.bat" />
+      <option name="SCRIPT_OPTIONS" value="hello.l" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -40,6 +68,8 @@
       <option name="presentableId" value="Default" />
       <updated>1583209922964</updated>
       <workItem from="1583209934997" duration="24000" />
+      <workItem from="1583210087816" duration="2255000" />
+      <workItem from="1583212367063" duration="259000" />
     </task>
     <servers />
   </component>
@@ -47,6 +77,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="50" y="79" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583212625771">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="50" y="79" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583212625771" />
+    <state x="503" y="306" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583212053780">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="503" y="306" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583212053780" />
+    <state x="376" y="285" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1583210332276">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="376" y="285" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583210332276" />
+    <state x="227" y="201" key="FileChooserDialogImpl" timestamp="1583212595690">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="227" y="201" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583212595690" />
+    <state x="38" y="139" key="SettingsEditor" timestamp="1583211552256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="38" y="139" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583211552256" />
     <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1583209943645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
