@@ -2,5 +2,3 @@
 project(Flex C)
 
 set(CMAKE_C_STANDARD 99)
-
-add_executable(Flex main.c)

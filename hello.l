@@ -1,24 +1,74 @@
-/*** Definition Section has one variable
-which can be accessed inside yylex()
-and main() ***/
+/*** Definition Section ***/
 %{
+
 int count = 0;
+
 %}
 
-/*** Rule Section has three rules, first rule
-matches with capital letters, second rule
-matches with any character except newline and
-third rule does not take input after the enter***/
-%%
-[A-Z] {printf("%s capital letter\n", yytext);
-count++;}
-.	 {printf("%s not a capital letter\n", yytext);}
-\n {return 0;}
+DIG0    [0-9]
+DIG     [1-9]
+LTR     [A-Za-z]
+ID      ({LTR}|_)({LTR}|{DIG0}|_)*
+ENT     -?{DIG0}+
+DEC     -?{DIG0}+[.]{DIG0}*
+ELV     ({ENT}|{DEC})e{ENT}
+IMG     ({ENT}|{DEC})(j|J)
+CNT     [^'^"^,^\n]*
+STR     (\'CNT\')|(\"CNT\")
+CMT     \#.*\n
+
+
+
+/*** Rule Section ***/
 %%
 
-/*** Code Section prints the number of
-capital letter present in the given input***/
-int yywrap(){}
+{ID} {
+    printf("%s : Una variable\n", yytext);
+}
+
+{ENT} {
+    printf("%s : Un numero entero\n", yytext);
+}
+
+{IMG} {
+    printf("%s : Un numero imaginario\n", yytext);
+}
+
+{DEC} {
+printf("%s : Un numero decimal\n", yytext);
+}
+
+{ELV} {
+printf("%s : Un numero elevado\n", yytext);
+}
+
+{STR} {
+printf("%s : Una string\n", yytext);
+}
+
+{CMT} {
+printf("%s : Un comentario\n", yytext);
+}
+
+. {
+    //printf("%s : Not a variable\n", yytext);
+}
+
+\n {
+    return 0;
+}
+
+\s {
+
+};
+
+%%
+/*** Code Section ***/
+
+int yywrap(){
+    return 1;
+}
+
 int main(){
 
 // Explanation:
@@ -39,8 +89,7 @@ int main(){
 // yyin = fp;
 
     yylex();
-    printf("\nNumber of Captial letters "
-           "in the given input - %d\n", count);
+//    printf("\nNumber of Captial letters in the given input - %d\n", count);
 
     return 0;
 }
