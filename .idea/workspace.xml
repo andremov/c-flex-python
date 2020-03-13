@@ -11,10 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="85bc3658-418f-43f4-9a6c-62c96ad53126" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hello.l" beforeDir="false" afterPath="$PROJECT_DIR$/hello.l" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lex.yy.c" beforeDir="false" afterPath="$PROJECT_DIR$/lex.yy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +46,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/run.bat" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunManager">
-    <configuration name="FLEX" type="ShConfigurationType">
+    <configuration name="FLEX" type="ShConfigurationType" activateToolWindowBeforeRun="false">
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/run.bat" />
       <option name="SCRIPT_OPTIONS" value="hello.l" />
       <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -74,6 +72,12 @@
       <workItem from="1583210087816" duration="2255000" />
       <workItem from="1583212367063" duration="484000" />
       <workItem from="1583290615365" duration="4329000" />
+      <workItem from="1583628504810" duration="3449000" />
+      <workItem from="1583698722225" duration="3207000" />
+      <workItem from="1583953118078" duration="3079000" />
+      <workItem from="1584032531811" duration="1612000" />
+      <workItem from="1584063561659" duration="14630000" />
+      <workItem from="1584140013121" duration="838000" />
     </task>
     <servers />
   </component>
@@ -81,10 +85,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="50" y="79" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583291722714">
+    <state x="50" y="79" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583701555102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="50" y="79" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583291722714" />
+    <state x="50" y="79" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583701555102" />
     <state x="503" y="306" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583212053780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -101,10 +105,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="227" y="201" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583212595690" />
-    <state x="38" y="139" key="SettingsEditor" timestamp="1583211552256">
+    <state x="38" y="139" key="SettingsEditor" timestamp="1584032952287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="38" y="139" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583211552256" />
+    <state x="38" y="139" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584032952287" />
     <state x="636" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1583209943645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

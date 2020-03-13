@@ -1,0 +1,38 @@
+DEF  id1=eval del1=( id2=xi del2=,  id3=exp del3=) del4=: 
+id4=ans  del5==  FALSE 
+FOR  id5=i  IN  RANGE del1=( id6=len del1=( id3=exp del3=) del3=)  del4=: 
+id7=part  del5== ERROR1=?  TRUE 
+FOR  id8=j  IN  RANGE del1=( id6=len del1=( id3=exp del6=[ id5=i del7=] del3=) del3=)  del4=: 
+id7=part  del5==  id7=part  AND  id2=xi del6=[ id3=exp del6=[ id5=i del7=] del6=[ id8=j del7=] del7=] 
+id4=ans  del5==  id4=ans  OR  id7=part 
+RETURN  id4=ans 
+
+WHILE  entero=2 op1=* id5=i op2=<= entero=40000L 
+id9=h  del5==  decimal=3.4e-5  op3=+  imaginario=5j 
+IF  id5=i  op4===  entero=0 del4=: 
+BREAK 
+DEF  id10=otra_fun del1=( del3=) del4=: 
+PASS 
+PRINT del1=( cadena='Esta es la respuesta' del2=, id11=con del2=,  cadena='y la expresión ' del2=,  entero=3 op1=* id5=i op3=+ entero=5 op1=* del1=( entero=7 op5=- id12=x del3=) del3=) 
+
+id13=table  del5==  del6=[ del7=] 
+id14=y  del5==  entero=123 id15=ABC 
+
+
+15 Identificadores
+id1=eval
+id2=xi
+id3=exp
+id4=ans
+id5=i
+id6=len
+id7=part
+id8=j
+id9=h
+id10=otra_fun
+id11=con
+id12=x
+id13=table
+id14=y
+id15=ABC
+1 Errores
