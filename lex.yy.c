@@ -463,11 +463,12 @@ int errCount = 0;
 char errStr[100] = "";
 bool haveError = false;
 void dumpErrorString();
+void upper_string();
 int getIdNum();
 int getOpNum();
 int getDelNum();
 /*** Rule Section ***/
-#line 471 "lex.yy.c"
+#line 472 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
  * section 1.
@@ -618,11 +619,11 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 53 "hello.l"
+#line 54 "hello.l"
 
 
 
-#line 626 "lex.yy.c"
+#line 627 "lex.yy.c"
 
 	if ( yy_init )
 		{
@@ -707,7 +708,7 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 56 "hello.l"
+#line 57 "hello.l"
 {
 dumpErrorString();
 fprintf(yyout,"del%d=%s ",getDelNum(yytext),yytext);
@@ -715,7 +716,7 @@ fprintf(yyout,"del%d=%s ",getDelNum(yytext),yytext);
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 61 "hello.l"
+#line 62 "hello.l"
 {
 dumpErrorString();
     fprintf(yyout,"op%d=%s ",getOpNum(yytext),yytext);
@@ -723,15 +724,16 @@ dumpErrorString();
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 66 "hello.l"
+#line 67 "hello.l"
 {
 dumpErrorString();
-fprintf(yyout,"%s ",strupr(yytext));
+upper_string(yytext);
+fprintf(yyout,"%s ",yytext);
 }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 71 "hello.l"
+#line 73 "hello.l"
 {
 dumpErrorString();
 fprintf(yyout,"cadena=%s ",yytext);
@@ -739,7 +741,7 @@ fprintf(yyout,"cadena=%s ",yytext);
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 76 "hello.l"
+#line 78 "hello.l"
 {
 dumpErrorString();
 fprintf(yyout,"entero=%s ",yytext);
@@ -747,7 +749,7 @@ fprintf(yyout,"entero=%s ",yytext);
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 81 "hello.l"
+#line 83 "hello.l"
 {
 dumpErrorString();
 fprintf(yyout,"decimal=%s ",yytext);
@@ -755,7 +757,7 @@ fprintf(yyout,"decimal=%s ",yytext);
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 86 "hello.l"
+#line 88 "hello.l"
 {
 dumpErrorString();
 fprintf(yyout,"imaginario=%s ",yytext);
@@ -763,7 +765,7 @@ fprintf(yyout,"imaginario=%s ",yytext);
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 91 "hello.l"
+#line 93 "hello.l"
 {
 dumpErrorString();
 fprintf(yyout,"id%d=%s ",getIdNum(yytext),yytext);
@@ -771,7 +773,7 @@ fprintf(yyout,"id%d=%s ",getIdNum(yytext),yytext);
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 96 "hello.l"
+#line 98 "hello.l"
 {
 dumpErrorString();
 fprintf(yyout," ");
@@ -782,14 +784,14 @@ case 10:
 yy_c_buf_p = yy_cp -= 1;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 101 "hello.l"
+#line 103 "hello.l"
 {
 dumpErrorString();
 }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 105 "hello.l"
+#line 107 "hello.l"
 {
     haveError = true;
     strcat(errStr, yytext);
@@ -797,7 +799,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 111 "hello.l"
+#line 113 "hello.l"
 {
 dumpErrorString();
 fprintf(yyout,"\n");
@@ -805,10 +807,10 @@ fprintf(yyout,"\n");
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 116 "hello.l"
+#line 118 "hello.l"
 ECHO;
 	YY_BREAK
-#line 812 "lex.yy.c"
+#line 814 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1694,11 +1696,24 @@ int main()
 	return 0;
 	}
 #endif
-#line 116 "hello.l"
+#line 118 "hello.l"
 
 /*** Code Section ***/
 
 int yywrap() {}
+
+void upper_string(char *s) {
+    int c = 0;
+
+    while (s[c] != '\0') {
+        if (s[c] >= 'a' && s[c] <= 'z') {
+            s[c] = s[c] - 32;
+        } else {
+            s[c] = s[c];
+        }
+        c++;
+    }
+}
 
 void dumpErrorString() {
     if (haveError) {

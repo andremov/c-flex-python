@@ -14,6 +14,7 @@ int errCount = 0;
 char errStr[100] = "";
 bool haveError = false;
 void dumpErrorString();
+void upper_string();
 int getIdNum();
 int getOpNum();
 int getDelNum();
@@ -65,7 +66,8 @@ dumpErrorString();
 
 {KEYWORDS} {
 dumpErrorString();
-fprintf(yyout,"%s ",strupr(yytext));
+upper_string(yytext);
+fprintf(yyout,"%s ",yytext);
 }
 
 {STRING} {
@@ -117,6 +119,19 @@ fprintf(yyout,"\n");
 /*** Code Section ***/
 
 int yywrap() {}
+
+void upper_string(char *s) {
+    int c = 0;
+
+    while (s[c] != '\0') {
+        if (s[c] >= 'a' && s[c] <= 'z') {
+            s[c] = s[c] - 32;
+        } else {
+            s[c] = s[c];
+        }
+        c++;
+    }
+}
 
 void dumpErrorString() {
     if (haveError) {
