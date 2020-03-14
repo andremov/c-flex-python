@@ -1,3 +1,3 @@
 flex %1
 gcc lex.yy.c
-a.exe
+a.exe entrada.py
